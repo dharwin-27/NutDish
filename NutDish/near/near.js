@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const restaurantList = document.getElementById("restaurant-list");
     const locateBtn = document.getElementById("locate-btn");
-
-    // Sample restaurant data
     const restaurants = [
         {
             name: "Pizza Place",
@@ -29,8 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
             status: "Open"
         }
     ];
-
-    // Function to render restaurants
     const renderRestaurants = () => {
         restaurantList.innerHTML = ""; // Clear previous listings
         restaurants.forEach(restaurant => {
@@ -45,15 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
             restaurantList.appendChild(restaurantItem);
         });
     };
-
-    // Locate button event listener
     locateBtn.addEventListener("click", () => {
         renderRestaurants();
     });
 
-    // Logout functionality (for demo purposes)
     document.getElementById("logout").addEventListener("click", () => {
         alert("You have been logged out.");
-        // Redirect to login page or perform logout actions
     });
 });
+
