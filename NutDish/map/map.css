@@ -55,7 +55,6 @@ body {
     display: block;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #3e2723;
     color: #ffe0b2;
@@ -137,3 +136,4 @@ input {
     margin-top: 20px;
     font-size: 18px;
 }
+
