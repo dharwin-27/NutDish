@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const orderList = document.getElementById("order-list");
-
-    // Sample past orders data
     const pastOrders = [
         {
             orderId: 12345,
@@ -25,8 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             date: "2023-10-12"
         }
     ];
-
-    // Function to render past orders
     const renderOrders = () => {
         pastOrders.forEach(order => {
             const orderItem = document.createElement("div");
@@ -41,13 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
             orderList.appendChild(orderItem);
         });
     };
-
-    // Call the function to render orders
     renderOrders();
-
-    // Logout functionality (for demo purposes)
     document.getElementById("logout").addEventListener("click", () => {
         alert("You have been logged out.");
-        // Redirect to login page or perform logout actions
     });
 });
+
