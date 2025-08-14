@@ -51,8 +51,6 @@ body {
 .menu-bar li:hover .dropdown {
     display: block;
 }
-
-/* Navigation Bar */
 nav {
     background-color: #3e2723;
     color: #ffe0b2;
@@ -131,3 +129,4 @@ h2, h3 {
     font-weight: bold;
     color: green; /* or red for pending */
 }
+
