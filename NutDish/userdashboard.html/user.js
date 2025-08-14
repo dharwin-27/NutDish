@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.getElementById("search-btn");
     const searchResults = document.getElementById("search-results");
 
-    // Sample food data
     const foodItems = [
         { name: "Vitamin A", description: "Carrot Salad" },
         { name: "SS birayani", description: "Covai" },
@@ -36,10 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Calcium ", description: "Almond Milk Chia Pudding" },
         { name: "Calcium ", description: "Sardine Salad on Whole Grain Bread" },
     ];
-
-    // Function to render search results
     const renderResults = (results) => {
-        searchResults.innerHTML = ""; // Clear previous results
+        searchResults.innerHTML = ""; 
         if (results.length === 0) {
             searchResults.innerHTML = "<p>No results found.</p>";
             return;
@@ -54,8 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
             searchResults.appendChild(resultItem);
         });
     };
-
-    // Search button event listener
     searchBtn.addEventListener("click", () => {
         const query = searchInput.value.toLowerCase();
         const filteredResults = foodItems.filter(item => item.name.toLowerCase().includes(query));
@@ -65,12 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
 });
 
-
-
-    // Logout functionality (for demo purposes)
     document.getElementById("logout").addEventListener("click", () => {
         alert("You have been logged out.");
-        // Redirect to login page or perform logout actions
     });
 const restaurants = [
     {
@@ -78,7 +69,7 @@ const restaurants = [
         cuisine: "Italian",
         price: "medium",
         rating: 4,
-        image: "file:///C:/Users/Admin/Pictures/restaurnt.jpg",
+        image: "/restaurnt.jpg",
         menu: [
             { name: "Pasta", price: 10 },
             { name: "Pizza", price: 12 }
@@ -89,7 +80,7 @@ const restaurants = [
         cuisine: "Chinese",
         price: "low",
         rating: 5,
-        image: "file:///C:/Users/Admin/Pictures/restaurnt1.jpg",
+        image: "/restaurnt1.jpg",
         menu: [
             { name: "Noodles", price: 8 },
             { name: "Dumplings", price: 10 }
@@ -100,22 +91,19 @@ const restaurants = [
         cuisine: "Indian",
         price: "high",
         rating: 4,
-        image: "file:///C:/Users/Admin/Pictures/restaurnt3.jpg",
+        image: "/restaurnt3.jpg",
         menu: [
             { name: "Curry", price: 12 },
             { name: "Naan", price: 4 }
         ]
     },
-    // Add more restaurant data here
 ];
 
-// Function to display restaurants
 function displayRestaurants(filter = {}) {
     const restaurantList = document.querySelector('.restaurant-list');
-    restaurantList.innerHTML = ''; // Clear existing restaurant cards
+    restaurantList.innerHTML = ''; 
 
     restaurants.forEach(restaurant => {
-        // Filter restaurants based on the selected criteria
         if ((filter.cuisine === 'all' || restaurant.cuisine === filter.cuisine) &&
             (filter.price === 'all' || restaurant.price === filter.price) &&
             (filter.rating === 'all' || restaurant.rating === parseInt(filter.rating))) {
@@ -133,8 +121,6 @@ function displayRestaurants(filter = {}) {
         }
     });
 }
-
-// Function to view menu of a restaurant
 function viewMenu(restaurantName) {
     const restaurant = restaurants.find(r => r.name === restaurantName);
     const menuSection = document.getElementById('menu');
@@ -150,13 +136,9 @@ function viewMenu(restaurantName) {
         menuSection.appendChild(menuItem);
     });
 }
-
-// Function to add item to cart
 function addToCart(itemName) {
     alert(`${itemName} has been added to your cart!`);
 }
-
-// Event listeners for filters
 document.getElementById('cuisine').addEventListener('change', function() {
     const filters = {
         cuisine: this.value,
@@ -165,7 +147,6 @@ document.getElementById('cuisine').addEventListener('change', function() {
     };
     displayRestaurants(filters);
 });
-
 document.getElementById('price').addEventListener('change', function() {
     const filters = {
         cuisine: document.getElementById('cuisine').value,
@@ -174,14 +155,10 @@ document.getElementById('price').addEventListener('change', function() {
     };
     displayRestaurants(filters);
 });
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const cartItems = document.getElementById("cart-items");
     const totalPriceDisplay = document.getElementById("total-price");
     let totalPrice = 0;
-
-    // Function to add item to cart
     const addToCart = (itemName, itemPrice) => {
         const listItem = document.createElement("li");
         listItem.textContent = `${itemName} - ₹${itemPrice.toFixed(2)}`;
@@ -189,8 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
         totalPrice += itemPrice;
         totalPriceDisplay.textContent = `Total: ₹${totalPrice.toFixed(2)}`;
     };
-
-    // Add event listeners to buttons
     const buttons = document.querySelectorAll(".add-to-cart");
     buttons.forEach(button => {
         button.addEventListener("click", (event) => {
@@ -201,6 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
 
 
