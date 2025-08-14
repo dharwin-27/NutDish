@@ -2,7 +2,6 @@ function trackOrder() {
     const orderID = document.getElementById('orderID').value;
     const resultDiv = document.getElementById('result');
 
-    // Mock tracking data
     const trackingData = {
         'Dharwin': 'You have a Premium Access for 20% offer!!!.',
         'Dilipkumar': 'You have a Premium Access for 20% offer!!!.',
@@ -13,10 +12,10 @@ function trackOrder() {
         'Arjun': 'You have a Premium Access for 20% offer!!!.'
     };
 
-    // Check the tracking status
     if (trackingData[orderID]) {
         resultDiv.textContent = trackingData[orderID];
     } else {
         resultDiv.textContent = 'You have an Ordinary Access.';
     }
 }
+
