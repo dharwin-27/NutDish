@@ -61,7 +61,6 @@ body {
     display: block;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #3e2723;
     color: #ffe0b2;
@@ -120,3 +119,4 @@ button {
 button:hover {
     background-color: #d32f2f;
 }
+
