@@ -1,4 +1,3 @@
-// Sample data for orders and feedback
 const orders = [
     { id: 1, item: 'Pizza', status: 'Pending' },
     { id: 2, item: 'Burger', status: 'Delivered' },
@@ -11,7 +10,6 @@ const feedbacks = [
     { customer: 'Charlie', comment: 'Food was cold.' }
 ];
 
-// Function to display orders
 function displayOrders() {
     const orderList = document.getElementById('order-list');
     orders.forEach(order => {
@@ -21,7 +19,6 @@ function displayOrders() {
     });
 }
 
-// Function to display feedback
 function displayFeedback() {
     const feedbackList = document.getElementById('feedback-list');
     feedbacks.forEach(feedback => {
@@ -31,12 +28,10 @@ function displayFeedback() {
     });
 }
 
-// Simulated navigation status
 document.getElementById('start-navigation').addEventListener('click', () => {
     document.getElementById('navigation-status').textContent = 'Navigation started...';
 });
 
-// Simulated order tracking
 document.getElementById('track-order').addEventListener('click', () => {
     alert('Tracking the current order...');
 });
@@ -45,6 +40,6 @@ document.getElementById("logout").addEventListener("click", () => {
     // Redirect to login page or perform logout actions
 });
 
-// Initial display
 displayOrders();
 displayFeedback();
+
