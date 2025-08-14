@@ -1,4 +1,3 @@
-// Function to simulate sending a message from the user
 function sendMessage() {
     const inputField = document.getElementById('user-input');
     const inputText = inputField.value.trim();
@@ -8,7 +7,6 @@ function sendMessage() {
     appendMessage(inputText, 'user');  // Add user's message
     inputField.value = '';             // Clear the input field
 
-    // Simulate AI response (you can extend this logic with more sophisticated answers)
     const botResponse = getBotResponse(inputText);
 
     // Add the bot's message
@@ -17,7 +15,6 @@ function sendMessage() {
     }, 1000); // AI response delay (simulating thinking time)
 }
 
-// Function to append a message to the chat box
 function appendMessage(message, sender) {
     const chatBox = document.getElementById('chat-box');
     const messageDiv = document.createElement('div');
@@ -30,7 +27,6 @@ function appendMessage(message, sender) {
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-// Function to generate a response from the bot (simple logic)
 function getBotResponse(userMessage) {
     const lowerCaseMessage = userMessage.toLowerCase();
 
@@ -205,3 +201,4 @@ else if (lowerCaseMessage.includes('bye')) {
         return 'I am not sure how to respond to that. Could you ask something else?';
     }
 }
+
