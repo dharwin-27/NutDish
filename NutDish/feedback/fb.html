@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback @nutdish</title>
+    <link rel="stylesheet" href="fb.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Customer Feedback</h1>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form">
+            <h2>We value your feedback</h2>
+            <label for="rating">Rate your experience (1-5):</label>
+            <select id="rating">
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="comment">Your Feedback:</label>
+            <textarea id="comment" placeholder="Write your feedback here..."></textarea>
+
+            <button onclick="submitFeedback()">Submit Feedback</button>
+        </div>
+
+        <!-- Feedback Display Section -->
+        <div class="feedback-display">
+            <h2>Customer Feedbacks</h2>
+            <div id="feedback-list">
+                <!-- Submitted feedback will be displayed here -->
+            </div>
+
+            <div id="average-rating">
+                <h3>Average Rating: <span id="avg-rating">0</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="fb.js"></script>
+</body>
+</html>

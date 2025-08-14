@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment Process</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <nav class="menu-bar">
+        <ul>
+            
+            <li><a href="file:///C:/Users/Admin/Desktop/food delivery/order/menu.html"><- Back</a></li>
+            
+        </ul>
+    </nav>
+    
+    <div class="payment-container">
+        <h2>Payment Process</h2>
+        <center>
+        <div class="container">
+            <h1>QR Scanner</h1>
+            <div class="scanner">
+                <!-- Camera feed will be shown here -->
+                <video id="video" width="100%" height="300px" style="border: 1px solid #000;"></video>
+            </div>
+    
+            <div id="qr-result">
+                <p>Click the scan QR code button </p>
+            </div>
+        </div>
+    </center>
+        <div id="qr-scanning">
+            <button id="scan-qr-button">Scan QR Code</button>
+            <div id="qr-message" class="hidden"></div>
+        </div>
+
+        <div id="payment-form" class="hidden">
+            <h3>Payment Details</h3>
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" placeholder="Enter amount" required>
+            
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="Enter card number" required>
+           
+
+            <button id="submit-payment" class="o">Submit Payment</button>
+            <div id="payment-status" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

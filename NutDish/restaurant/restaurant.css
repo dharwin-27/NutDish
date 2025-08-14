@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e65c2e;
+    margin: 0;
+    line-height: 1.6;
+    
+}
+
+.menu-bar {
+    background-color: #333;
+    overflow: row;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar li {
+    float: left;
+    position: relative;
+}
+
+.menu-bar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    background-color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown li {
+    float: none;
+}
+
+.dropdown a {
+    padding: 10px 15px;
+}
+
+.menu-bar li:hover .dropdown {
+    display: block;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3e2723;
+    color: #ffe0b2;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: small;
+}
+
+nav a:hover {
+    background-color: #ffe0b2;
+    color: #3e2723;
+    border-radius: 5px;
+}
+
+section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #d32f2f;
+}
+
+.action-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #e65c2e;
+}
+.a{
+    color: white;
+    text-decoration: none;
+}

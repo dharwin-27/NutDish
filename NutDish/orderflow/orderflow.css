@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    background-color: #3e2723;
+    color: #ffe0b2;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #ffe0b2;
+    color: #3e2723;
+    border-radius: 5px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-card {
+    width: 30%;
+    height: 150px; /* Set the height of the card */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the background image */
+    color: white; /* Text color for better visibility */
+    padding: 20px; /* Padding inside the card */
+    margin: 10px; /* Space between cards */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    text-align: left; /* Align text to the left */
+}
+
+.restaurant1 {
+    background-image: url('C:\Users\Admin\Desktop\food delivery\orderflow\restaurnt.jpg'); /* Replace with actual image path */
+    color: black;
+}
+
+.restaurant2 {
+    background-image: url('..C:/Users/Admin/Desktop/food delivery/orderflow/restaurnt.jpg'); /* Replace with actual image path */
+    color: black;
+}
+
+.restaurant3 {
+    background-image: url('C:\Users\Admin\Desktop\food delivery\orderflow\restaurnt.jpg'); /* Replace with actual image path */
+    color: black;
+}
+
+.menu-item {
+    margin-top: 20px;
+}
+
+.recommendation-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.recommendation-item {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#payment {
+    margin-top: 20px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: solid;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}

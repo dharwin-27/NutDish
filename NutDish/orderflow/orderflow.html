@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Flow</title>
+    <link rel="stylesheet" href="orderflow.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Admin/Desktop/food%20delivery/orderflow/orderflow.html"><-Home</a></li>
+            <li><a href="file:///C:/Users/Admin/Desktop/food%20delivery/payment/payment.html">🔳 QR Scanner</a></li>
+            <li><a href="file:///C:/Users/Admin/Desktop/food%20delivery/profile/profile.html">👤 Profile</a></li>
+            <li><a href="file:///C:/Users/Admin/Desktop/food%20delivery/aichatbot/aichatbot.html">💬AI ChatBot</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Step 1: Select Restaurant and Menu Items -->
+        <section id="restaurant-selection">
+            <h2>Select Restaurant</h2>
+            <div class="restaurant-list">
+                <div class="restaurant-card restaurant1">
+                    <h3>Restaurant 1</h3>
+                    <button>Select</button>
+                </div>
+                <div class="restaurant-card restaurant2">
+                    <h3>Restaurant 2</h3>
+                    <button>Select</button>
+                </div>
+                <div class="restaurant-card restaurant3">
+                    <h3>Restaurant 3</h3>
+                    <button>Select</button>
+                </div>
+            </div>
+
+            <h2>Select Menu Items</h2>
+            <div class="menu-item">
+                <p>Dish Name 1 - $10 <button>Add to Cart</button></p>
+                <p>Dish Name 2 - $12 <button>Add to Cart</button></p>
+            </div>
+        </section>
+
+        <!-- Step 2: AI-Driven Recommendations -->
+        <section id="recommendations">
+            <h2>Recommendations for You</h2>
+            <div class="recommendation-list">
+                <div class="recommendation-item">
+                    <h3>Recommended Dish 1</h3>
+                    <p>Great choice! Perfect for your meal.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="recommendation-item">
+                    <h3>Recommended Dish 2</h3>
+                    <p>Popular among our customers!</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3: Secure Payment Processing -->
+        <section id="payment">
+            <h2>Payment</h2>
+            <form>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="123" required>
+                
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+
+        <!-- Step 4: Real-time Order Tracking -->
+        <section id="tracking">
+            <h2>Order Tracking</h2>
+            <p>Your order is being prepared...</p>
+            <p>Tracking Status: <strong>Out for delivery</strong></p>
+        </section>
+
+        <!-- Step 5: Estimated Delivery Time -->
+        <section id="delivery">
+            <h2>Estimated Delivery Time</h2>
+            <p>Your order will arrive in approximately <strong>30 minutes</strong>.</p>
+            <p>Updates will be sent to your phone.</p>
+        </section>
+    </div>
+
+    <script src="orderflow.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

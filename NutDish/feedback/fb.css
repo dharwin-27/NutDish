@@ -1,0 +1,96 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #ffe0b2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feedback-form, .feedback-display {
+    margin-bottom: 30px;
+}
+
+.feedback-form h2 {
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+.feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.feedback-form select, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d32f2f;
+    color: #ffe0b2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form button:hover {
+    background-color: #d32f2f;
+}
+
+.feedback-display h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#feedback-list {
+    margin-bottom: 20px;
+}
+
+.feedback-item {
+    background-color: #d32f2f;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.feedback-item strong {
+    color: #d32f2f;
+}
+
+#average-rating h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #d32f2f;
+}

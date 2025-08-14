@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Scanner</title>
+    <link rel="stylesheet" href="qr.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>QR Scanner</h1>
+        <div class="scanner">
+            <!-- Camera feed will be shown here -->
+            <video id="video" width="100%" height="auto" style="border: 1px solid #000;"></video>
+        </div>
+
+        <div id="qr-result">
+            <p>No QR code detected yet.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <script src="qr.js"></script>
+</body>
+</html>

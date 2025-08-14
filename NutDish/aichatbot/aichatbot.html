@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nut-bot</title>
+    <link rel="stylesheet" href="aichatbot.css">
+</head>
+<body>
+    <nav class="menu-bar">
+        <ul>
+           
+            <li><a href="file:///C:/Users/Admin/Desktop/food delivery/userdashboard.html/user1.html "><-Back</a></li>
+            
+        </ul>
+    </nav>
+    
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box">
+            <!-- Chat messages will be dynamically appended here -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message..." onkeydown="if(event.key === 'Enter'){sendMessage();}">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+   
+
+    <script src="aichatbot.js"></script>
+</body>
+</html>

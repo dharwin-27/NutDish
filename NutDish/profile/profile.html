@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css"> 
+</head>
+<body style="background-color: #ffe0b2;">
+
+    <!-- Navigation Bar -->
+     
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="file:///C:/Users/Admin/Desktop/food%20delivery/userdashboard.html/user1.html"><-Back</a></li>
+            <li><a href="file:///C:/Users/Admin/Desktop/food%20delivery/past/past.html">Past Orders</a></li>
+            <li><a href="javascript:void(0);" id="logout">🚪 Logout</a></li>
+            
+        </ul>
+    </nav>
+
+    <section id="profile">
+        <h2 style="color: rgb(248, 246, 246); background-color: #3d3d3c;">User Profile</h2>
+        <div class="profile-info">
+            <img src="file:///C:/Users/Admin/Desktop/food%20delivery/profile/user.jpg" alt="User Avatar" class="avatar">
+            <div class="details">
+                <h3>Dharwin V</h3>
+                <p>Email: dharwin.v@gmail.com</p>
+                <p>Phone: +919092813131</p>
+                <p>Address: Ganapathy, Coimbatore</p>
+                <button class="edit-btn">Edit Profile</button>
+            </div>
+        </div>
+
+        <h3 style="color: rgb(248, 245, 245); background-color: #3d3d3c;">Your Favorite Foods</h3>
+        <div class="order-list">
+            <div class="order-item">
+                <p>Spinach and Mushroom Quiche - <span class="status">Your Last Favorite</span></p>
+                <p>Total: $49.00</p>
+            </div>
+            <div class="order-item">
+                <p>Kale Salad with Lemon Vinaigrette - <span class="status">Your Most Favorite</span></p>
+                <p>Total: $29.00</p>
+            </div>
+            <!-- Add more orders as needed -->
+        </div>
+        <h3 style="color: rgb(248, 245, 245); background-color: #3d3d3c;">Your Delivery History</h3>
+        <div class="order-list">
+            <div class="order-item">
+                <p>Order1 - <span class="status">Delivered</span></p>
+                <p>Items: Pizza, Pasta - Total: $25.00</p>
+            </div>
+            <div class="order-item">
+                <p>Order2 - <span class="status">Pending</span></p>
+                <p>Items: Sushi - Total: $15.00</p>
+            </div>
+            <!-- Add more orders as needed -->
+        </div>
+    </section>
+    <nav class="menu-bar">
+        <ul>
+           
+            <h3>nutdishweb@gmail.com</h3>
+        </ul>
+    </nav>
+    <script src="profile.js">
+        
+    function logout() {
+        window.location.href = 'file:///C:/Users/Admin/Desktop/food%20delivery/login/login1.html';
+    }
+
+    </script>
+
+</body>
+</html>

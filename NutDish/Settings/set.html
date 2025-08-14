@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="set.css">
+    <title>Settings @nutdish</title>
+</head>
+<body>
+    <nav class="menu-bar">
+        <ul>
+            
+            <li><a href="file:///C:/Users/Admin/Desktop/food delivery/userdashboard.html/user1.html"><- Back</a></li>
+            
+        </ul>
+    </nav>
+    <div class="container">
+        <center>
+        <h1>Settings</h1>
+    </center>
+        <div class="setting">
+            <label for="notifications">Enable Notifications</label>
+            <input type="checkbox" id="notifications" onclick="toggleSetting('notifications')">
+        </div>
+        <div class="setting">
+            <label for="dark-mode">Enable Dark Mode</label>
+            <input type="checkbox" id="dark-mode" onclick="toggleSetting('dark-mode')">
+        </div>
+        <div class="setting">
+            <label for="sound">Enable Sound       </label>
+            <input type="checkbox" id="sound" onclick="toggleSetting('sound')">
+        </div>
+        <div >
+            <a href="#"><button class="set"><h2>Accessibility</h2></button></a> 
+        </div>
+        <div >
+            <a href="#"><button class="set"><h2>Permissions</h2></button></a> 
+        </div>
+        <div >
+            <a href="#"><button class="set"><h2>Help&Support</h2></button></a> 
+        </div>
+        <div >
+            <a href="#"><button class="set"><h2>Logout</h2></button></a> 
+        </div>
+        <center>
+        <div >
+            <a href="#">
+            <button onclick="saveSettings()" class="a">Save Settings</button>
+        </a>
+        </div>
+    </center>
+    </div>
+    <nav class="m">
+        <ul>
+           
+            <h3>nutdishweb@gmail.com</h3>
+        </ul>
+    </nav>
+    <script src="set.js"></script>
+</body>
+</html>
