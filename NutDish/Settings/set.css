@@ -56,8 +56,6 @@ body {
 .menu-bar li:hover .dropdown {
     display: block;
 }
-
-/* Navigation Bar */
 nav {
     background-color: #3e2723;
     color: #ffe0b2;
@@ -143,4 +141,5 @@ label {
 .m{
     margin-bottom: 0%;
 }
+
 
