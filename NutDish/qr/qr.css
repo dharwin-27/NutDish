@@ -1,10 +1,8 @@
-/* Reset and basic styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -50,3 +48,4 @@ h1 {
     background-color: #fff;
     margin-top: 20px;
 }
+
