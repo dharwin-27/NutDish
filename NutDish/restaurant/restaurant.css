@@ -5,7 +5,6 @@ body {
     line-height: 1.6;
     
 }
-
 .menu-bar {
     background-color: #333;
     overflow: row;
@@ -54,7 +53,6 @@ body {
     display: block;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #3e2723;
     color: #ffe0b2;
@@ -108,4 +106,5 @@ h2 {
 .a{
     color: white;
     text-decoration: none;
+
 }
