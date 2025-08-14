@@ -16,7 +16,6 @@ signinbtn.onclick = function () {
     body.classList.remove('active');
 }
 
-// Handle user sign-up form submission
 userSignupForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -38,7 +37,6 @@ userSignupForm.addEventListener('submit', function (e) {
         password: userPassword
     };
 
-    // Send data to the backend (replace 'your-api-url' with the actual URL of your backend API)
     fetch('your-api-url/user-signup', {
         method: 'POST',
         headers: {
@@ -50,7 +48,7 @@ userSignupForm.addEventListener('submit', function (e) {
     .then(data => {
         if (data.success) {
             alert('Sign up successful!');
-            window.location.href = 'login.html'; // Redirect to login page
+            window.location.href = 'login.html'; 
         } else {
             alert(data.message || 'Something went wrong!');
         }
@@ -61,7 +59,6 @@ userSignupForm.addEventListener('submit', function (e) {
     });
 });
 
-// Handle restaurant sign-up form submission
 restaurantSignupForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -83,7 +80,6 @@ restaurantSignupForm.addEventListener('submit', function (e) {
         password: restaurantPassword
     };
 
-    // Send data to the backend (replace 'your-api-url' with the actual URL of your backend API)
     fetch('your-api-url/restaurant-signup', {
         method: 'POST',
         headers: {
@@ -95,7 +91,7 @@ restaurantSignupForm.addEventListener('submit', function (e) {
     .then(data => {
         if (data.success) {
             alert('Restaurant sign up successful!');
-            window.location.href = 'login.html'; // Redirect to login page
+            window.location.href = 'login.html'; 
         } else {
             alert(data.message || 'Something went wrong!');
         }
@@ -113,14 +109,12 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
-// Body parser middleware to parse JSON data
 app.use(bodyParser.json());
 
-// MySQL connection
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root', // change to your MySQL username
-  password: '', // change to your MySQL password
+  user: 'root', 
+  password: '', 
   database: 'restaurantApp'
 });
 
@@ -132,17 +126,14 @@ db.connect(err => {
   console.log('Connected to MySQL');
 });
 
-// User sign-up API
 app.post('/user-signup', (req, res) => {
   const { name, email, dob, password } = req.body;
 
-  // Hash the password
   bcrypt.hash(password, 10, (err, hashedPassword) => {
     if (err) {
       return res.status(500).json({ success: false, message: 'Error hashing password' });
     }
 
-    // Insert user data into the database
     const query = 'INSERT INTO users (name, email, dob, password) VALUES (?, ?, ?, ?)';
     db.query(query, [name, email, dob, hashedPassword], (err, result) => {
       if (err) {
@@ -153,17 +144,14 @@ app.post('/user-signup', (req, res) => {
   });
 });
 
-// Restaurant sign-up API
 app.post('/restaurant-signup', (req, res) => {
   const { name, email, dob, password } = req.body;
 
-  // Hash the password
   bcrypt.hash(password, 10, (err, hashedPassword) => {
     if (err) {
       return res.status(500).json({ success: false, message: 'Error hashing password' });
     }
 
-    // Insert restaurant data into the database
     const query = 'INSERT INTO restaurants (name, email, dob, password) VALUES (?, ?, ?, ?)';
     db.query(query, [name, email, dob, hashedPassword], (err, result) => {
       if (err) {
@@ -174,7 +162,7 @@ app.post('/restaurant-signup', (req, res) => {
   });
 });
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
