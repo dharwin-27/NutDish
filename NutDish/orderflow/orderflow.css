@@ -45,31 +45,31 @@ h2 {
 
 .restaurant-card {
     width: 30%;
-    height: 150px; /* Set the height of the card */
-    background-size: cover; /* Cover the entire card */
-    background-position: center; /* Center the background image */
-    color: white; /* Text color for better visibility */
-    padding: 20px; /* Padding inside the card */
-    margin: 10px; /* Space between cards */
-    border-radius: 8px; /* Rounded corners */
+    height: 150px; 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    padding: 20px; 
+    margin: 10px; 
+    border-radius: 8px; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom */
-    text-align: left; /* Align text to the left */
+    justify-content: flex-end; 
+    text-align: left; 
 }
 
 .restaurant1 {
-    background-image: url('C:\Users\Admin\Desktop\food delivery\orderflow\restaurnt.jpg'); /* Replace with actual image path */
+    background-image: url('\orderflow\restaurnt.jpg'); 
     color: black;
 }
 
 .restaurant2 {
-    background-image: url('..C:/Users/Admin/Desktop/food delivery/orderflow/restaurnt.jpg'); /* Replace with actual image path */
+    background-image: url('/orderflow/restaurnt.jpg'); 
     color: black;
 }
 
 .restaurant3 {
-    background-image: url('C:\Users\Admin\Desktop\food delivery\orderflow\restaurnt.jpg'); /* Replace with actual image path */
+    background-image: url('\orderflow\restaurnt.jpg'); 
     color: black;
 }
 
@@ -82,7 +82,6 @@ h2 {
     justify-content: space-between;
     margin-top: 20px;
 }
-
 .recommendation-item {
     width: 45%;
     padding: 10px;
@@ -90,17 +89,14 @@ h2 {
     border-radius: 5px;
     background-color: white;
 }
-
 #payment {
     margin-top: 20px;
 }
-
 input {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
 }
-
 button {
     background-color: #28a745;
     color: white;
@@ -113,3 +109,4 @@ button {
 button:hover {
     background-color: #218838;
 }
+
